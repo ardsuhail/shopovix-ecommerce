@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useCart } from "@/component/CartContext";
 import ThemeToggle from "./Theme";
 import Searchbar from "./Searchbar";
-import { Hamburger, SidebarOpen, Settings, Grid, LayoutDashboard, UserCog, ShieldCheck } from "lucide-react";
+import { Hamburger, SidebarOpen, Settings,Menu, Grid, LayoutDashboard, UserCog, ShieldCheck } from "lucide-react";
 import { useSession, signIn, signOut } from "next-auth/react"
 
 import Image from "next/image";
@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Hamburger for mobile */}
         <div className="sm:hidden">
           <button onClick={() => setNavSidebar(true)}>
-            <SidebarOpen className="text-gray-700" size={30} />
+            <Menu className="text-gray-700" size={30} />
           </button>
         </div>
 

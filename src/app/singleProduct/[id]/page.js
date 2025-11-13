@@ -14,6 +14,7 @@ import ReviewsDisplay from "@/component/CustomerReviews";
 import Error from "@/component/Error";
 
 const Page = ({ params }) => {
+    
   const { category } = params;
   const router = useRouter();
   const { id } = params;
